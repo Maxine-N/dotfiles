@@ -22,13 +22,19 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 # ohmyzsh plugins - https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
-plugins=(git kubectl)
+plugins=(
+	git 
+	kubectl
+	kube-ps1
+)
 
 # load ohmyzsh
 source $ZSH/oh-my-zsh.sh
 
 # Set default editor
 export EDITOR='nano'
+
+PROMPT=$PROMPT' $(kube_ps1) '
 
 # import zsh completions
 if [ -f ~/.zsh_completion ]; then
