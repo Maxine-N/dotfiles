@@ -40,3 +40,5 @@ PROMPT=$PROMPT' $(kube_ps1) '
 if [ -f ~/.zsh_completion ]; then
     source ~/.zsh_completion
 fi
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
