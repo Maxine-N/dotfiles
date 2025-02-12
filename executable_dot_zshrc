@@ -42,3 +42,4 @@ if [ -f ~/.zsh_completion ]; then
 fi
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+alias watch="viddy"
