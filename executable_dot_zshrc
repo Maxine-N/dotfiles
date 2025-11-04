@@ -34,6 +34,11 @@ if [ -f ~/.zsh_completion ]; then
     source ~/.zsh_completion
 fi
 
+# env based zshrc
+if [ -f ~/.zshrc_env ]; then
+    source ~/.zshrc_env
+fi
+
 # History related settings
 HISTFILE=/home/user/zsh_history/.zsh_history
 HISTSIZE=10000
